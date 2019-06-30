@@ -10,7 +10,7 @@ web crawler dedicated to realestate, retrieving data from many websites into a d
 
 # To Start with a database:
 * You must have postgres installed and running
-* Create a database realestate (for instance) and run the create-all.sql script provided
+* Create a database realestate (for instance) and run the createAll.sql script provided
 * Edit the realestate.properties and:
     * specify the database connection properties
     * edit urls from realestate web sites you want to explore. For now just seloger is supported so you should enter a seloger search url
@@ -26,4 +26,5 @@ RoadMap:
 * Parse / retrieve description
 * Display best choices according to price per square meter
 * Provide web interface to display results and get instructions / urls from users
+* Make service available on a cloud platform like AWS
 * etc...
