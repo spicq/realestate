@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                    http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <properties>
+        <jdk.source.version>1.8</jdk.source.version>
+        <jdk.target.version>1.8</jdk.target.version>
+        <jdk.home>${env.JAVA_HOME}</jdk.home>
+        <compiler.executable>${jdk.home}\bin\javac</compiler.executable>
+        <maven.test.skip>true</maven.test.skip>
+    </properties>
+
+    <groupId>com.github.spicq</groupId>
+    <artifactId>realestate</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <name>Real-Estate-Data-Extractor</name>
+
+    <build>
+        <defaultGoal>package</defaultGoal>
+        <plugins>
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <argLine>-Dsun.lang.ClassLoader.allowArraySyntax=true</argLine>
+                    <systemProperties>
+                      <property>
+                        <name>root.dir</name>
+                        <value>${project.build.directory}/test-classes</value>
+                      </property>
+                    </systemProperties>
+                    <includes>
+                        <include>**/*.java</include>
+                    </includes>
+                </configuration>
+            </plugin>-->
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!--<dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.1</version>
+        </dependency>-->
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.12.1</version>
+		</dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-email</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.javacsv</groupId>
+            <artifactId>javacsv</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.11</version>
+        </dependency>
+        <dependency><groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>3.9</version></dependency>
+        <dependency><groupId>commons-dbutils</groupId><artifactId>commons-dbutils</artifactId><version>1.7</version></dependency>
+        <dependency><groupId>org.postgresql</groupId><artifactId>postgresql</artifactId><version>42.2.5</version></dependency>
+    </dependencies>
+</project>
