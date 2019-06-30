@@ -52,7 +52,7 @@ public class DataExtractor {
     private List<RealEstateExtractor> getRealEstateExtractors() {
         List<RealEstateExtractor> result = new ArrayList<>();
 
-        Reflections reflections = new Reflections("com.sp");
+        Reflections reflections = new Reflections("com.github.spicq");
         Set<Class<? extends RealEstateExtractor>> realEstateExtractorClasses = reflections.getSubTypesOf(RealEstateExtractor.class);
         for (Class<? extends RealEstateExtractor> realEstateExtractorClass:realEstateExtractorClasses) {
             if ( ! Modifier.isAbstract(realEstateExtractorClass.getModifiers())) {
