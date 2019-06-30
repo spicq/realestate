@@ -21,9 +21,6 @@ import java.util.logging.Logger;
  * @author Sebastien Picq on 28/06/2019
  *
  *
- * TO DO: add picture (?), add description (?), display 10 best choices
- * Then add Extractor for LeBonCoin / squirrelus / trouveIt etc...
- * Publier sur GitHub et partager...
  *
  * <p>
  * <p>
