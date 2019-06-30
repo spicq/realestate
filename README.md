@@ -26,4 +26,5 @@ RoadMap:
 * Parse / retrieve description
 * Display best choices according to price per square meter
 * Provide web interface to display results and get instructions / urls from users
+* Make service available on a cloud platform like AWS
 * etc...
